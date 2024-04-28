@@ -1,0 +1,151 @@
+object frmConfiguraBanco: TfrmConfiguraBanco
+  Left = 272
+  Height = 322
+  Top = 250
+  Width = 562
+  Caption = 'Configura banco'
+  ClientHeight = 322
+  ClientWidth = 562
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object Label1: TLabel
+    Left = 8
+    Height = 36
+    Top = 8
+    Width = 240
+    Caption = 'Configura Banco'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -27
+    Font.Name = 'JetBrains Mono'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Shape1: TShape
+    Left = 0
+    Height = 2
+    Top = 48
+    Width = 609
+  end
+  object btnSalva: TSpeedButton
+    Left = 296
+    Height = 32
+    Top = 272
+    Width = 120
+    Caption = 'Salva'
+    OnClick = btnSalvaClick
+  end
+  object btnCancela: TSpeedButton
+    Left = 424
+    Height = 32
+    Top = 272
+    Width = 120
+    Caption = 'Cancela'
+    OnClick = btnCancelaClick
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 21
+    Top = 64
+    Width = 140
+    Caption = 'Banco de dados'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'JetBrains Mono'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtBanco: TEdit
+    Left = 16
+    Height = 23
+    Top = 96
+    Width = 256
+    TabOrder = 0
+  end
+  object edtServidor: TEdit
+    Left = 16
+    Height = 23
+    Top = 176
+    Width = 256
+    TabOrder = 1
+  end
+  object l: TLabel
+    Left = 16
+    Height = 21
+    Top = 144
+    Width = 80
+    Caption = 'Servidor'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'JetBrains Mono'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 16
+    Height = 21
+    Top = 224
+    Width = 50
+    Caption = 'Porta'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'JetBrains Mono'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtPorta: TEdit
+    Left = 16
+    Height = 23
+    Top = 256
+    Width = 96
+    NumbersOnly = True
+    TabOrder = 2
+    OnChange = edtPortaChange
+  end
+  object Label4: TLabel
+    Left = 288
+    Height = 21
+    Top = 64
+    Width = 70
+    Caption = 'Usuario'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'JetBrains Mono'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtUsuario: TEdit
+    Left = 288
+    Height = 23
+    Top = 96
+    Width = 256
+    TabOrder = 3
+  end
+  object l1: TLabel
+    Left = 288
+    Height = 21
+    Top = 144
+    Width = 50
+    Caption = 'Senha'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'JetBrains Mono'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object edtSenha: TEdit
+    Left = 288
+    Height = 23
+    Top = 176
+    Width = 256
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 4
+    OnChange = edtSenhaChange
+  end
+end
