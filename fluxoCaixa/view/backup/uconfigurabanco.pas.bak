@@ -14,12 +14,14 @@ type
 
   TfrmConfiguraBanco = class(TForm)
     btnCancela: TSpeedButton;
+    edtOdbc: TEdit;
     edtUsuario: TEdit;
     edtPorta: TEdit;
     edtBanco: TEdit;
     edtServidor: TEdit;
     edtSenha: TEdit;
     l1: TLabel;
+    l2: TLabel;
     Label1: TLabel;
     Label2: TLabel;
     l: TLabel;
@@ -33,6 +35,7 @@ type
     procedure edtSenhaChange(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure l2Click(Sender: TObject);
   private
          procedure salva_ini;
          procedure ler_ini;
@@ -57,6 +60,11 @@ end;
 procedure TfrmConfiguraBanco.FormShow(Sender: TObject);
 begin
   ler_ini;
+end;
+
+procedure TfrmConfiguraBanco.l2Click(Sender: TObject);
+begin
+
 end;
 
 procedure TfrmConfiguraBanco.btnCancelaClick(Sender: TObject);
@@ -91,6 +99,7 @@ var
        arquivoIni.WriteInteger('ConexaoDB','Porta', StrToIntDef(edtPorta.Text,3306));
        arquivoIni.WriteString('ConexaoDB','Usuario', edtUsuario.Text);
        arquivoIni.WriteString('ConexaoDB','Senha', edtSenha.Text);
+       arquivoIni.WriteString('ConexaoDB','ODBC', edtOdbc.Text);
      finally
        arquivoIni.Free
      end;
@@ -102,12 +111,14 @@ procedure TfrmConfiguraBanco.ler_ini;
    begin
         arquivoIni := TIniFile.Create(cfg_arquivoIni);
         try
-          edtBanco.Text := arquivoIni.ReadString('ConexaoDB','Banco', '');
-          edtServidor.Text := arquivoIni.ReadString('ConexaoDB','Servidor', '');
-          edtPorta.Text := IntToStr(arquivoIni.ReadInteger('ConexaoDB', 'Porta', 3306));
-          edtUsuario.Text := arquivoIni.ReadString('ConexaoDB','Usuario', '');
-          edtSenha.Text := arquivoIni.ReadString('ConexaoDB','Senha', '');
+          edtBanco.Text    := arquivoIni.ReadString('ConexaoDB','Banco', 'fluxo_caixa');
+          edtServidor.Text := arquivoIni.ReadString('ConexaoDB','Servidor', 'localhost');
+          edtPorta.Text    := IntToStr(arquivoIni.ReadInteger('ConexaoDB', 'Porta', 3306));
+          edtUsuario.Text  := arquivoIni.ReadString('ConexaoDB','Usuario', 'suporte');
+          edtSenha.Text    := arquivoIni.ReadString('ConexaoDB','Senha', 'devloop365');
+          edtOdbc.Text    := arquivoIni.ReadString('ConexaoDB','DriverODBC', '');
         finally
+          arquivoIni.Free
         end;
    end;
 

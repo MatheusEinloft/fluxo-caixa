@@ -1,11 +1,11 @@
 object frmConfiguraBanco: TfrmConfiguraBanco
   Left = 272
-  Height = 322
+  Height = 334
   Top = 250
-  Width = 562
+  Width = 568
   Caption = 'Configura banco'
-  ClientHeight = 322
-  ClientWidth = 562
+  ClientHeight = 334
+  ClientWidth = 568
   OnShow = FormShow
   Position = poMainFormCenter
   object Label1: TLabel
@@ -28,9 +28,9 @@ object frmConfiguraBanco: TfrmConfiguraBanco
     Width = 609
   end
   object btnSalva: TSpeedButton
-    Left = 296
+    Left = 288
     Height = 32
-    Top = 272
+    Top = 288
     Width = 120
     Caption = 'Salva'
     OnClick = btnSalvaClick
@@ -38,7 +38,7 @@ object frmConfiguraBanco: TfrmConfiguraBanco
   object btnCancela: TSpeedButton
     Left = 424
     Height = 32
-    Top = 272
+    Top = 288
     Width = 120
     Caption = 'Cancela'
     OnClick = btnCancelaClick
@@ -68,7 +68,7 @@ object frmConfiguraBanco: TfrmConfiguraBanco
     Height = 23
     Top = 176
     Width = 256
-    TabOrder = 1
+    TabOrder = 2
   end
   object l: TLabel
     Left = 16
@@ -86,7 +86,7 @@ object frmConfiguraBanco: TfrmConfiguraBanco
   object Label3: TLabel
     Left = 16
     Height = 21
-    Top = 224
+    Top = 216
     Width = 50
     Caption = 'Porta'
     Font.CharSet = ANSI_CHARSET
@@ -99,10 +99,10 @@ object frmConfiguraBanco: TfrmConfiguraBanco
   object edtPorta: TEdit
     Left = 16
     Height = 23
-    Top = 256
+    Top = 248
     Width = 96
     NumbersOnly = True
-    TabOrder = 2
+    TabOrder = 4
     OnChange = edtPortaChange
   end
   object Label4: TLabel
@@ -123,7 +123,7 @@ object frmConfiguraBanco: TfrmConfiguraBanco
     Height = 23
     Top = 96
     Width = 256
-    TabOrder = 3
+    TabOrder = 1
   end
   object l1: TLabel
     Left = 288
@@ -145,7 +145,31 @@ object frmConfiguraBanco: TfrmConfiguraBanco
     Width = 256
     EchoMode = emPassword
     PasswordChar = '*'
-    TabOrder = 4
+    TabOrder = 3
     OnChange = edtSenhaChange
+  end
+  object edtOdbc: TEdit
+    Left = 288
+    Height = 23
+    Top = 248
+    Width = 256
+    EchoMode = emPassword
+    PasswordChar = '*'
+    TabOrder = 5
+    OnChange = edtSenhaChange
+  end
+  object l2: TLabel
+    Left = 298
+    Height = 21
+    Top = 216
+    Width = 110
+    Caption = 'DRIVER ODBC'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = 'JetBrains Mono'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+    OnClick = l2Click
   end
 end

@@ -1,0 +1,90 @@
+inherited frmcad_plano: Tfrmcad_plano
+  Height = 490
+  Width = 597
+  Caption = 'Cadastro Plano de Contas'
+  ClientHeight = 490
+  ClientWidth = 597
+  OnCreate = FormCreate
+  inherited pnpTitulo: TPanel
+    Width = 597
+    Caption = 'Cadastro Plano de Contas'
+  end
+  inherited PageControl1: TPageControl
+    Height = 390
+    Width = 597
+    inherited tsPesquisa: TTabSheet
+      ClientHeight = 362
+      ClientWidth = 589
+      inherited Panel1: TPanel
+        Width = 589
+        ClientWidth = 589
+      end
+    end
+    inherited tsCadastro: TTabSheet
+      ClientHeight = 362
+      ClientWidth = 589
+      object Label2: TLabel[0]
+        Left = 40
+        Height = 15
+        Top = 24
+        Width = 39
+        Caption = 'Codigo'
+      end
+      object edtCodigo: TEdit[1]
+        Left = 40
+        Height = 23
+        Top = 56
+        Width = 80
+        TabOrder = 0
+      end
+      object Label3: TLabel[2]
+        Left = 40
+        Height = 15
+        Top = 96
+        Width = 51
+        Caption = 'Descrição'
+      end
+      object edtDescricao: TEdit[3]
+        Left = 40
+        Height = 23
+        Top = 128
+        Width = 80
+        TabOrder = 1
+      end
+      object Label4: TLabel[4]
+        Left = 40
+        Height = 15
+        Top = 176
+        Width = 23
+        Caption = 'Tipo'
+      end
+    end
+  end
+  inherited pnpRodape: TPanel
+    Top = 440
+    Width = 597
+    ClientWidth = 597
+  end
+  object Label1: TLabel[4]
+    Left = 48
+    Height = 15
+    Top = 112
+    Width = 34
+    Caption = 'Label1'
+  end
+  object edtTipo: TComboBox[5]
+    Left = 48
+    Height = 23
+    Top = 280
+    Width = 100
+    ItemHeight = 15
+    ItemIndex = 0
+    Items.Strings = (
+      'C'
+      'D'
+    )
+    TabOrder = 3
+    Text = 'C'
+    OnChange = edtTipoChange
+  end
+end

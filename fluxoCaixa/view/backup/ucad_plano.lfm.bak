@@ -1,0 +1,8 @@
+inherited frmcad_planoconta: Tfrmcad_planoconta
+  Caption = 'Cadastro Plano de Contas'
+  inherited PageControl1: TPageControl
+    inherited tsCadastro: TTabSheet
+      OnContextPopup = tsCadastroContextPopup
+    end
+  end
+end

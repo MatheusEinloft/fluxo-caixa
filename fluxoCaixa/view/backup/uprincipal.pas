@@ -22,6 +22,7 @@ type
     btnPlanos: TSpeedButton;
     btnLancamento: TSpeedButton;
     procedure btnCfgClick(Sender: TObject);
+    procedure btnContasClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormShow(Sender: TObject);
@@ -38,11 +39,11 @@ type
 var
   frmprincipal: Tfrmprincipal;
   cfg_arquivoINI, cfg_pathApp : string;
-  cfg_banco, cfg_servidor, cfg_usuario, cfg_senha : string;
+  cfg_banco, cfg_servidor, cfg_usuario, cfg_senha, cfg_odbc : string;
   cfg_porta : integer;
 
 implementation
-  uses uconfigurabanco, utabela;
+  uses uconfigurabanco, cad_padrao, utabela, ucad_planoconta;
 
 {$R *.lfm}
 
@@ -64,7 +65,6 @@ begin
     ShowMessage('Conectado!');
   except
     on e: exception do
-
       ShowMessage('Erro ao conectar no banco de dados'+sLineBreak+e.ClassName+sLineBreak+e.Message);
   end;
 end;
@@ -76,7 +76,6 @@ end;
 
 procedure Tfrmprincipal.btnSairClick(Sender: TObject);
 begin
-     ShowMessage('ate breve');
      Application.Terminate;
 end;
 
@@ -90,6 +89,16 @@ begin
       end;
 end;
 
+procedure Tfrmprincipal.btnContasClick(Sender: TObject);
+begin
+  frmcad_padrao := Tfrmcad_padrao.Create(self);
+  try
+    frmcad_padrao.ShowModal;
+  finally
+    FreeAndNil(frmcad_padrao);
+  end;
+end;
+
 procedure Tfrmprincipal.pnpEsquerdaClick(Sender: TObject);
 begin
 
@@ -97,7 +106,12 @@ end;
 
 procedure Tfrmprincipal.btnPlanosClick(Sender: TObject);
 begin
-
+  frmcad_plano := Tfrmcad_plano.Create(self);
+  try
+    frmcad_plano.ShowModal;
+  finally
+    FreeAndNil(frmcad_planoconta);
+  end;
 end;
 
 procedure Tfrmprincipal.Shape1ChangeBounds(Sender: TObject);
@@ -116,6 +130,7 @@ procedure TfrmPrincipal.ler_ini;
           cfg_porta    := arquivoIni.ReadInteger('ConexaoDB', 'Porta', 3306);
           cfg_usuario  := arquivoIni.ReadString('ConexaoDB','Usuario', '');
           cfg_senha    := arquivoIni.ReadString('ConexaoDB','Senha', '');
+          cfg_odbc    := arquivoIni.ReadString('ConexaoDB','Odbc', '');
         finally
           arquivoIni.Free
         end;

@@ -24,6 +24,7 @@ var
   TabGlobal: TTabGlobal;
 
 implementation
+   uses uprincipal;
 
 {$R *.lfm}
 
@@ -31,6 +32,7 @@ implementation
 
 procedure TTabGlobal.conexaoBeforeConnect(Sender: TObject);
 begin
+  //padrao para quem usa linux
   conexao.Database := cfg_banco;
   conexao.HostName := cfg_servidor;
   conexao.User     := cfg_usuario;
@@ -38,7 +40,15 @@ begin
   conexao.Port     := cfg_porta;
   conexao.AutoCommit:= true;
   {$IfDef windows}
-     conexao.LibraryLocation := cfg_pathApp+'libmariadb.dll';
+  //padrao para quem usa windows
+     if cfg_odbc = EmptyStr then
+        conexao.LibraryLocation := cfg_pathApp+'libmariadb.dll'
+     else
+         begin
+              conexao.Protocol :='ado';
+              conexao.Database :='Driver={'+cfg_odbc+'}; server='+cfg_servidor+'; Database='+cfg_banco+'; User='+cfg_usuario+'; password='+cfg_senha+'; option=3;
+         end;
+
   {$EndIf}
 end;
 

@@ -1,0 +1,170 @@
+object frmcad_padrao: Tfrmcad_padrao
+  Left = 325
+  Height = 587
+  Top = 250
+  Width = 588
+  Caption = 'Cadastro Padrao'
+  ClientHeight = 587
+  ClientWidth = 588
+  Color = clMenuHighlight
+  OnShow = FormShow
+  Position = poMainFormCenter
+  object pnpTitulo: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 588
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'Cadastro Padrao'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -24
+    Font.Name = 'JetBrains Mono'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentBackground = False
+    ParentFont = False
+    TabOrder = 0
+    OnClick = pnpTituloClick
+  end
+  object SpeedButton5: TSpeedButton
+    Left = 8
+    Height = 30
+    Top = 8
+    Width = 96
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 487
+    Top = 50
+    Width = 588
+    ActivePage = tsCadastro
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 1
+    object tsPesquisa: TTabSheet
+      Caption = 'Pesquisa'
+      ClientHeight = 459
+      ClientWidth = 580
+      object Panel1: TPanel
+        Left = 0
+        Height = 50
+        Top = 0
+        Width = 580
+        Align = alTop
+        BevelColor = clSilver
+        ClientHeight = 50
+        ClientWidth = 580
+        ParentBackground = False
+        ParentColor = False
+        TabOrder = 0
+        object edtPesquisa: TEdit
+          Left = 8
+          Height = 23
+          Top = 15
+          Width = 344
+          TabOrder = 0
+        end
+        object btnPesquisa: TSpeedButton
+          Left = 376
+          Height = 22
+          Top = 16
+          Width = 96
+          Caption = 'Pesquisa'
+          Font.CharSet = ANSI_CHARSET
+          Font.Height = -13
+          Font.Name = 'JetBrains Mono'
+          Font.Pitch = fpFixed
+          Font.Quality = fqDraft
+          ParentFont = False
+        end
+      end
+    end
+    object tsCadastro: TTabSheet
+      Caption = 'Cadastro'
+    end
+  end
+  object pnpRodape: TPanel
+    Left = 0
+    Height = 50
+    Top = 537
+    Width = 588
+    Align = alBottom
+    ClientHeight = 50
+    ClientWidth = 588
+    Color = clSilver
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 2
+    object btnIncluir: TSpeedButton
+      Left = 16
+      Height = 30
+      Top = 8
+      Width = 96
+      Caption = 'Incluir'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -13
+      Font.Name = 'JetBrains Mono'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      OnClick = btnIncluirClick
+      ParentFont = False
+    end
+    object btnAlterar: TSpeedButton
+      Left = 128
+      Height = 30
+      Top = 8
+      Width = 96
+      Caption = 'Alterar'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -13
+      Font.Name = 'JetBrains Mono'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      OnClick = btnAlterarClick
+      ParentFont = False
+    end
+    object btnApagar: TSpeedButton
+      Left = 244
+      Height = 30
+      Top = 8
+      Width = 96
+      Caption = 'Apagar'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -13
+      Font.Name = 'JetBrains Mono'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      OnClick = btnApagarClick
+      ParentFont = False
+    end
+    object btnSalvar: TSpeedButton
+      Left = 360
+      Height = 30
+      Top = 8
+      Width = 96
+      Caption = 'Salvar'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -13
+      Font.Name = 'JetBrains Mono'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      OnClick = btnSalvarClick
+      ParentFont = False
+    end
+    object btnCancelar: TSpeedButton
+      Left = 480
+      Height = 30
+      Top = 8
+      Width = 96
+      Caption = 'Cancelar'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -13
+      Font.Name = 'JetBrains Mono'
+      Font.Pitch = fpFixed
+      Font.Quality = fqDraft
+      OnClick = btnCancelarClick
+      ParentFont = False
+    end
+  end
+end
