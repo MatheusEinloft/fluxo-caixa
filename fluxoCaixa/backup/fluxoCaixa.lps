@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="3"/>
         <CursorPos X="55" Y="13"/>
-        <UsageCount Value="199"/>
+        <UsageCount Value="200"/>
         <Loaded Value="True"/>
       </Unit>
       <Unit>
@@ -19,10 +19,9 @@
         <ComponentName Value="frmprincipal"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <TopLine Value="88"/>
         <CursorPos X="28" Y="113"/>
-        <UsageCount Value="199"/>
+        <UsageCount Value="200"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -33,9 +32,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="18"/>
+        <TopLine Value="17"/>
         <CursorPos X="5" Y="49"/>
-        <UsageCount Value="185"/>
+        <UsageCount Value="256"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -46,8 +45,8 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="4"/>
-        <CursorPos X="23" Y="74"/>
-        <UsageCount Value="67"/>
+        <CursorPos X="29" Y="9"/>
+        <UsageCount Value="138"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -59,7 +58,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="3" Y="35"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="91"/>
       </Unit>
       <Unit>
         <Filename Value="view\ucad_planoconta.pas"/>
@@ -67,9 +66,11 @@
         <ComponentName Value="frmcad_plano"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="2"/>
-        <CursorPos X="3" Y="33"/>
-        <UsageCount Value="20"/>
+        <TopLine Value="8"/>
+        <CursorPos X="3" Y="46"/>
+        <UsageCount Value="91"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -98,82 +99,10 @@
         <UnitName Value="LR_DB_Zeos"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="46" Y="8"/>
-        <UsageCount Value="11"/>
-      </Unit>
-      <Unit>
-        <Filename Value="C:\lazarus\lcl\buttons.pp"/>
-        <UnitName Value="Buttons"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="420"/>
-        <CursorPos X="3" Y="439"/>
-        <UsageCount Value="5"/>
+        <UsageCount Value="4"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="view\uprincipal.pas"/>
-        <Caret Line="98" Column="29" TopLine="81"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="34" Column="15" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="33" Column="45" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="34" Column="20" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="16" Column="12" TopLine="7"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="33" Column="48" TopLine="17"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="71" Column="87" TopLine="48"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="70" Column="87" TopLine="47"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="69" Column="87" TopLine="46"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="68" Column="87" TopLine="45"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="67" Column="87" TopLine="44"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="66" Column="87" TopLine="43"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="65" Column="87" TopLine="42"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="47" Column="30" TopLine="25"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="17" Column="32"/>
-      </Position>
-      <Position>
-        <Filename Value="view\cad_padrao.pas"/>
-        <Caret Line="80" Column="27" TopLine="66"/>
-      </Position>
       <Position>
         <Filename Value="view\cad_padrao.pas"/>
         <Caret Line="17" Column="33"/>
@@ -212,15 +141,7 @@
       </Position>
       <Position>
         <Filename Value="view\uprincipal.pas"/>
-        <Caret Line="46" Column="56" TopLine="81"/>
-      </Position>
-      <Position>
-        <Filename Value="view\uprincipal.pas"/>
         <Caret Line="111" Column="22" TopLine="81"/>
-      </Position>
-      <Position>
-        <Filename Value="view\uprincipal.pas"/>
-        <Caret Line="46" Column="56" TopLine="76"/>
       </Position>
       <Position>
         <Filename Value="view\uprincipal.pas"/>
@@ -229,6 +150,78 @@
       <Position>
         <Filename Value="view\uprincipal.pas"/>
         <Caret Line="46" Column="61" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="33" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="34" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="35" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="36" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="38" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="40" Column="3" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="39" Column="3" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="41" Column="3" TopLine="3"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="46" Column="3"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="45" Column="3" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="46" Column="3" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="45" Column="3" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="46" Column="3" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="45" Column="3" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="46" Column="3" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="45" Column="3" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="46" Column="3" TopLine="8"/>
+      </Position>
+      <Position>
+        <Filename Value="view\ucad_planoconta.pas"/>
+        <Caret Line="45" Column="3" TopLine="8"/>
       </Position>
     </JumpHistory>
     <RunParams>

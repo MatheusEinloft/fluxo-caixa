@@ -9,6 +9,7 @@ object frmcad_padrao: Tfrmcad_padrao
   Color = clMenuHighlight
   OnShow = FormShow
   Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
   object pnpTitulo: TPanel
     Left = 0
     Height = 50

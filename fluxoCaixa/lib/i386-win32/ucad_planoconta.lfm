@@ -59,6 +59,21 @@ inherited frmcad_plano: Tfrmcad_plano
         Width = 23
         Caption = 'Tipo'
       end
+      object edtTipo: TComboBox[5]
+        Left = 40
+        Height = 23
+        Top = 208
+        Width = 100
+        ItemHeight = 15
+        ItemIndex = 0
+        Items.Strings = (
+          'C'
+          'D'
+        )
+        Style = csDropDownList
+        TabOrder = 2
+        Text = 'C'
+      end
     end
   end
   inherited pnpRodape: TPanel
@@ -72,20 +87,5 @@ inherited frmcad_plano: Tfrmcad_plano
     Top = 112
     Width = 34
     Caption = 'Label1'
-  end
-  object edtTipo: TComboBox[5]
-    Left = 48
-    Height = 23
-    Top = 280
-    Width = 100
-    ItemHeight = 15
-    ItemIndex = 0
-    Items.Strings = (
-      'C'
-      'D'
-    )
-    TabOrder = 3
-    Text = 'C'
-    OnChange = edtTipoChange
   end
 end
